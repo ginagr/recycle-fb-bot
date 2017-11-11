@@ -7,8 +7,7 @@ ZIP_CODE = "00000"
 
 
 def get_response(message):
-    response = "Not sure what you mean. Use the *" + MAIN_COMMAND + \
-        "* command, followed by your *zip code* and what you want to recycle."
+    response = "Not sure what you mean. Use the " + MAIN_COMMAND + " command, followed by your zip code and what you want to recycle."
 
     if message.startswith(MAIN_COMMAND):
         message = message.split(' ', 1)[1] ##remove command from string
